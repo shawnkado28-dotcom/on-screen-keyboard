@@ -7,7 +7,7 @@ Persistent
 ; =========================================================
 
 normalColor := 0x252525
-pressedColor := 0x00AFFF
+pressedColor := 0xBADF30
 textColor := 0xFFFFFF
 
 keyW := 42
@@ -227,7 +227,7 @@ UpdateKeyboard()
             lastStates[name] := pressed
 
             if pressed
-                DrawKey(key, 0x00AFFF)
+                DrawKey(key, 0xBADF30)
             else
                 DrawKey(key, 0x252525)
         }
@@ -244,7 +244,7 @@ UpdateKeyboard()
     global overlayVisible
 
     if overlayVisible
-        DrawKey(mouseInfo[1], 0x00AFFF)
+        DrawKey(mouseInfo[1], 0xBADF30)
 }
 
 ~LButton Up::
@@ -266,7 +266,7 @@ UpdateKeyboard()
     global overlayVisible
 
     if overlayVisible
-        DrawKey(mouseInfo[2], 0x00AFFF)
+        DrawKey(mouseInfo[2], 0xBADF30)
 }
 
 ~RButton Up::
@@ -288,7 +288,7 @@ UpdateKeyboard()
     global overlayVisible
 
     if overlayVisible
-        DrawKey(mouseInfo[3], 0x00AFFF)
+        DrawKey(mouseInfo[3], 0xBADF30)
 }
 
 ~MButton Up::
@@ -310,7 +310,7 @@ UpdateKeyboard()
     global overlayVisible
 
     if overlayVisible
-        DrawKey(mouseInfo[4], 0x00AFFF)
+        DrawKey(mouseInfo[4], 0xBADF30)
 }
 
 ~XButton2 Up::
@@ -362,7 +362,7 @@ XButton1::
     if !overlayVisible
         return
 
-    DrawKey(mouseInfo[5], 0x00AFFF)
+    DrawKey(mouseInfo[5], 0xBADF30)
     SetTimer(ScrollUpOff, -100)
 }
 
@@ -387,7 +387,7 @@ ScrollUpOff()
     if !overlayVisible
         return
 
-    DrawKey(mouseInfo[6], 0x00AFFF)
+    DrawKey(mouseInfo[6], 0xBADF30)
     SetTimer(ScrollDownOff, -100)
 }
 
